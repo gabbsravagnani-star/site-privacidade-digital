@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#111218">
+  <meta name="description" content="Aprenda o que são dados pessoais, conheça seus direitos na LGPD e pratique hábitos de proteção digital. Teste seus conhecimentos em cinco perguntas.">
+  <title>Privacidade Digital e Proteção de Dados Pessoais</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="lock" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="2.1" d="M7 9V6.7a5 5 0 0 1 10 0V9"/>
+    <path fill="currentColor" fill-rule="evenodd" d="M5.4 8.6h13.2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5.4a2 2 0 0 1-2-2v-10a2 2 0 0 1 2-2ZM12 12a1.8 1.8 0 0 0-.9 3.4v3.3h1.8v-3.3A1.8 1.8 0 0 0 12 12Z"/>
+  </symbol>
+  <symbol id="user" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="6.4" r="4.4"/>
+      <path d="M3 22v-1.2a9 9 0 0 1 18 0V22Z"/>
+    </g>
+  </symbol>
+  <symbol id="document" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5.1 2h8.4l5.4 5.4V21a1 1 0 0 1-1 1H5.1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Z"/>
+      <path d="M13.3 2v5.7h5.6M8 12h7m-7 3.5h7M8 19h4.2"/>
+    </g>
+  </symbol>
+  <symbol id="alert" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10.5 2.8a1.7 1.7 0 0 1 3 0l9.2 16.8a1.5 1.5 0 0 1-1.3 2.2H2.6a1.5 1.5 0 0 1-1.3-2.2Z"/>
+      <path d="M12 8.8v5.7m0 3.8h.01"/>
+    </g>
+  </symbol>
+  <symbol id="shield" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 1.9c2.6 1.9 5.3 2.8 8.8 3.2v5.8c0 5.7-3.4 9.1-8.8 11.2-5.4-2.1-8.8-5.5-8.8-11.2V5.1c3.5-.4 6.2-1.3 8.8-3.2Z"/>
+      <path d="m8.5 12 2.2 2.2 4.8-4.8"/>
+    </g>
+  </symbol>
+  <symbol id="bulb" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8.5 16.9c0-2.1-2.6-3.3-2.6-6.6a6.1 6.1 0 1 1 12.2 0c0 3.3-2.6 4.5-2.6 6.6Zm.5 2.5h6m-5.2 1.9c.4.7 1.1 1.1 2.2 1.1s1.8-.4 2.2-1.1"/>
+      <path d="M12 1.4v1m6.6 1.1-.7.8m3.9 5.9h-1m-16.6 0h-1m2.9-5.9-.7-.8"/>
+    </g>
+  </symbol>
+  <symbol id="arrow" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M3.5 12h16.8m-6.8-6.8 6.8 6.8-6.8 6.8"/>
+  </symbol>
+  <symbol id="menu" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/>
+  </symbol>
+  <symbol id="close" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="m6 6 12 12M18 6 6 18"/>
+  </symbol>
+</svg>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">
+        <svg aria-hidden="true"><use href="#lock"></use></svg>
+        <span>Privacidade Digital</span>
+      </a>
+
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="menu-principal" aria-expanded="false" hidden>
+        <svg aria-hidden="true"><use href="#menu"></use></svg>
+        <span>Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="menu-principal" aria-label="Menu principal">
+        <a href="#inicio" aria-current="location">Início</a>
+        <a href="#dados-pessoais">Dados Pessoais</a>
+        <a href="#lgpd">LGPD</a>
+        <a href="#riscos">Riscos</a>
+        <a href="#protecao">Proteção</a>
+        <a href="#quiz">Quiz</a>
+      </nav>
+
+      <button class="button button-primary objective-button" type="button" data-objective-open aria-haspopup="dialog" aria-controls="objetivo-dialog" hidden>Objetivo do site</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="titulo-principal" tabindex="-1">
+      <div class="container hero-inner">
+        <p class="eyebrow">Informação também é proteção</p>
+        <h1 id="titulo-principal">Privacidade Digital <span>e Proteção de Dados Pessoais</span></h1>
+        <p class="hero-description">Entenda o que são dados pessoais, conheça seus direitos, identifique riscos e aprenda como se proteger no ambiente digital.</p>
+        <a class="button button-primary" href="#conteudo">Explorar o conteúdo <svg aria-hidden="true"><use href="#arrow"></use></svg></a>
+      </div>
+    </section>
+
+    <section class="overview" id="conteudo" aria-labelledby="titulo-temas" tabindex="-1">
+      <div class="container">
+        <h2 class="visually-hidden" id="titulo-temas">Explore os temas</h2>
+        <div class="overview-grid">
+          <a class="overview-card" href="#dados-pessoais" aria-labelledby="link-dados card-dados">
+            <svg class="overview-icon" aria-hidden="true"><use href="#user"></use></svg>
+            <div class="overview-copy">
+              <h3 id="card-dados">Dados Pessoais</h3>
+              <p>Entenda o que são, quais são os tipos e por que precisam de proteção.</p>
+              <span class="card-link" id="link-dados">Saiba mais <svg aria-hidden="true"><use href="#arrow"></use></svg></span>
+            </div>
+          </a>
+          <a class="overview-card" href="#lgpd" aria-labelledby="link-lgpd card-lgpd">
+            <svg class="overview-icon" aria-hidden="true"><use href="#document"></use></svg>
+            <div class="overview-copy">
+              <h3 id="card-lgpd">LGPD</h3>
+              <p>Conheça a lei que regula o uso de dados pessoais no Brasil.</p>
+              <span class="card-link" id="link-lgpd">Saiba mais <svg aria-hidden="true"><use href="#arrow"></use></svg></span>
+            </div>
+          </a>
+          <a class="overview-card" href="#riscos" aria-labelledby="link-riscos card-riscos">
+            <svg class="overview-icon" aria-hidden="true"><use href="#alert"></use></svg>
+            <div class="overview-copy">
+              <h3 id="card-riscos">Riscos</h3>
+              <p>Veja os principais perigos do ambiente digital e entenda como eles podem afetar você.</p>
+              <span class="card-link" id="link-riscos">Saiba mais <svg aria-hidden="true"><use href="#arrow"></use></svg></span>
+            </div>
+          </a>
+          <a class="overview-card" href="#protecao" aria-labelledby="link-protecao card-protecao">
+            <svg class="overview-icon" aria-hidden="true"><use href="#shield"></use></svg>
+            <div class="overview-copy">
+              <h3 id="card-protecao">Proteção</h3>
+              <p>Aprenda boas práticas para proteger suas informações no dia a dia.</p>
+              <span class="card-link" id="link-protecao">Saiba mais <svg aria-hidden="true"><use href="#arrow"></use></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic" id="dados-pessoais" aria-labelledby="titulo-dados-pessoais" tabindex="-1">
+      <div class="container topic-inner">
+        <div class="topic-header">
+          <div>
+            <h2 id="titulo-dados-pessoais">Dados Pessoais</h2>
+            <p>Uma informação é um dado pessoal quando se refere a alguém que pode ser identificado, seja por essa informação, seja pela combinação dela com outros dados.</p>
+          </div>
+          <a class="topic-close" href="#conteudo">Voltar aos temas ↑</a>
+        </div>
+        <div class="topic-grid">
+          <div class="topic-box">
+            <h3>Dados pessoais no cotidiano</h3>
+            <p>Nome, CPF, telefone, endereço e e-mail são exemplos de dados pessoais quando identificam alguém. Uma foto reconhecível, a localização ou um identificador de conta também podem ser dados pessoais quando permitem identificar uma pessoa.</p>
+          </div>
+          <div class="topic-box">
+            <h3>Dados pessoais sensíveis</h3>
+            <p>A LGPD dá proteção especial a informações sobre saúde, vida sexual, origem racial ou étnica, religião, opinião política e filiação a sindicatos ou organizações religiosas, filosóficas ou políticas. Dados genéticos e biométricos, como uma impressão digital, também são sensíveis quando associados a uma pessoa.</p>
+          </div>
+        </div>
+        <p class="topic-note"><strong>Na prática,</strong> em um cadastro de clínica, seu nome e telefone são dados pessoais. Um diagnóstico associado a você é um dado pessoal sensível.</p>
+        <p class="topic-sources">Fonte oficial · <a href="https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-normaatualizada-pl.html">LGPD, art. 5º</a></p>
+      </div>
+    </section>
+
+    <section class="topic" id="lgpd" aria-labelledby="titulo-lgpd" tabindex="-1">
+      <div class="container topic-inner">
+        <div class="topic-header">
+          <div>
+            <h2 id="titulo-lgpd">LGPD</h2>
+            <p>A Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018) estabelece regras para coletar, usar, guardar e compartilhar dados pessoais no Brasil. O tratamento deve ter uma finalidade clara, limitar-se ao necessário e se apoiar em uma base legal, como consentimento ou cumprimento de obrigação legal.</p>
+          </div>
+          <a class="topic-close" href="#conteudo">Voltar aos temas ↑</a>
+        </div>
+        <div class="topic-grid">
+          <div class="topic-box">
+            <h3>Conheça seus direitos</h3>
+            <ul>
+              <li>Confirmar se seus dados são tratados, acessá-los e pedir correção.</li>
+              <li>Saber com quem seus dados foram compartilhados e o que acontece se você não consentir.</li>
+              <li>Revogar o consentimento e pedir a eliminação dos dados tratados com essa base, observadas as exceções legais.</li>
+              <li>Pedir anonimização, bloqueio ou eliminação de dados excessivos, desnecessários ou usados em desacordo com a lei.</li>
+              <li>Solicitar a portabilidade dos dados nas condições previstas e a revisão de decisões exclusivamente automatizadas que afetem seus interesses.</li>
+            </ul>
+          </div>
+          <div class="topic-box">
+            <h3>Como fazer um pedido</h3>
+            <p>Procure o canal de privacidade da organização que decide como seus dados são usados, chamada de controladora. Descreva seu pedido e guarde o protocolo. Se o pedido não for atendido, você pode apresentar uma petição de titular à Agência Nacional de Proteção de Dados (ANPD).</p>
+          </div>
+        </div>
+        <p class="topic-sources">Fontes oficiais · <a href="https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-normaatualizada-pl.html">Texto atualizado da LGPD</a> · <a href="https://www.gov.br/anpd/pt-br/assuntos/titular-de-dados/direito-dos-titulares">Direitos do titular na ANPD</a> · <a href="https://www.gov.br/anpd/pt-br/canais_atendimento/cidadao-titular-de-dados/denuncia-peticao-de-titular-referente-lgpd">Petição de titular</a></p>
+      </div>
+    </section>
+
+    <section class="topic" id="riscos" aria-labelledby="titulo-riscos" tabindex="-1">
+      <div class="container topic-inner">
+        <div class="topic-header">
+          <div>
+            <h2 id="titulo-riscos">Riscos</h2>
+            <p>Dados expostos ou acessados sem autorização podem facilitar fraudes, invasões de contas e golpes que parecem vir de pessoas conhecidas.</p>
+          </div>
+          <a class="topic-close" href="#conteudo">Voltar aos temas ↑</a>
+        </div>
+        <div class="topic-grid">
+          <div class="topic-box">
+            <h3>Exposição excessiva</h3>
+            <p>Fotos de documentos, localização em tempo real e detalhes da rotina podem revelar seu endereço ou permitir que alguém descubra quando você está fora de casa.</p>
+          </div>
+          <div class="topic-box">
+            <h3>Vazamentos</h3>
+            <p>Uma falha, um erro de configuração ou um ataque pode expor cadastros. Se uma senha vazada também for usada em outros serviços, essas contas ficam em risco.</p>
+          </div>
+          <div class="topic-box">
+            <h3>Uso indevido</h3>
+            <p>Alguém pode usar seus dados sem autorização para abrir um cadastro, se passar por você ou tornar uma fraude mais convincente.</p>
+          </div>
+          <div class="topic-box">
+            <h3>Permissões desnecessárias</h3>
+            <p>Um aplicativo pode pedir acesso à câmera, ao microfone ou aos contatos sem precisar dessas informações para funcionar.</p>
+          </div>
+          <div class="topic-box">
+            <h3>Engenharia social</h3>
+            <p>Golpistas exploram confiança e urgência para conseguir senhas, códigos ou pagamentos. No phishing, mensagens ou páginas falsas costumam imitar serviços conhecidos.</p>
+          </div>
+        </div>
+        <p class="topic-note"><strong>Na prática,</strong> se receber uma mensagem sobre um vazamento, confirme o aviso no site ou aplicativo oficial. Se uma senha tiver sido exposta, troque-a em todas as contas em que foi usada.</p>
+        <p class="topic-sources">Fonte · <a href="https://cartilha.cert.br/fasciculos/">Fascículos da Cartilha de Segurança para Internet do CERT.br</a></p>
+      </div>
+    </section>
+
+    <section class="topic" id="protecao" aria-labelledby="titulo-protecao" tabindex="-1">
+      <div class="container topic-inner">
+        <div class="topic-header">
+          <div>
+            <h2 id="titulo-protecao">Proteção</h2>
+            <p>Você pode reduzir a exposição dos seus dados com alguns ajustes nas contas, nos aplicativos e nos hábitos de navegação.</p>
+          </div>
+          <a class="topic-close" href="#conteudo">Voltar aos temas ↑</a>
+        </div>
+        <div class="topic-grid">
+          <div class="topic-box">
+            <h3>Crie senhas fortes e únicas</h3>
+            <p>Use uma senha longa e diferente para cada conta. Um gerenciador de senhas pode criar e guardar combinações difíceis de adivinhar.</p>
+          </div>
+          <div class="topic-box">
+            <h3>Ative a verificação em duas etapas (2FA)</h3>
+            <p>Adicione uma segunda forma de confirmação ao entrar na conta, como um código de aplicativo autenticador. Mantenha seus códigos de verificação em sigilo.</p>
+          </div>
+          <div class="topic-box">
+            <h3>Revise as permissões</h3>
+            <p>Nas configurações do dispositivo, verifique quais aplicativos podem usar a câmera, o microfone, a localização e os contatos. Mantenha apenas os acessos necessários. Se houver essa opção, permita o acesso somente enquanto estiver usando o aplicativo.</p>
+          </div>
+          <div class="topic-box">
+            <h3>Ajuste sua privacidade</h3>
+            <p>Escolha quem pode ver suas publicações, sua lista de contatos e suas informações de perfil. Antes de postar, confira se a foto revela localização, documentos ou informações de outras pessoas.</p>
+          </div>
+          <div class="topic-box">
+            <h3>Cheque links e mensagens</h3>
+            <p>Se uma mensagem inesperada pedir pagamento ou confirmação de dados, verifique o pedido pelo aplicativo oficial ou por outro canal que você já conhece. Abra o serviço diretamente.</p>
+          </div>
+          <div class="topic-box">
+            <h3>Mantenha tudo atualizado</h3>
+            <p>Instale atualizações do sistema, do navegador e dos aplicativos para receber correções de segurança. Ative as atualizações automáticas quando disponíveis.</p>
+          </div>
+        </div>
+        <p class="topic-sources">Fonte · <a href="https://cartilha.cert.br/dicas-rapidas/">Dicas da Cartilha de Segurança para Internet do CERT.br</a></p>
+      </div>
+    </section>
+
+    <section class="quiz" id="quiz" aria-labelledby="titulo-quiz" tabindex="-1">
+      <div class="container">
+        <h2 class="visually-hidden" id="titulo-quiz">Quiz</h2>
+        <div class="quiz-intro" data-quiz-intro>
+          <div>
+            <p class="eyebrow">Teste seus conhecimentos</p>
+            <p class="quiz-title" aria-hidden="true">Quiz</p>
+            <p class="quiz-description">Responda a cinco perguntas e veja o quanto você sabe sobre privacidade digital e proteção de dados.</p>
+            <button class="button button-primary" type="button" data-quiz-start hidden>Iniciar quiz <svg aria-hidden="true"><use href="#arrow"></use></svg></button>
+            <noscript><p class="quiz-notice">Ative o JavaScript no navegador para responder ao quiz.</p></noscript>
+          </div>
+
+          <aside class="quiz-tip" aria-label="Dica de proteção">
+            <div class="quiz-tip-icon"><svg aria-hidden="true"><use href="#bulb"></use></svg></div>
+            <div>
+              <h3>Pequenas atitudes fazem grande diferença.</h3>
+              <p>Quanto mais informação, mais segurança no seu dia a dia digital.</p>
+            </div>
+            <div class="tip-segments" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          </aside>
+        </div>
+
+        <div class="quiz-panel" data-quiz hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Privacidade Digital <span>© 2026</span></p>
+      <nav aria-label="Menu do rodapé">
+        <a href="#inicio">Início</a>
+        <a href="#dados-pessoais">Dados Pessoais</a>
+        <a href="#lgpd">LGPD</a>
+        <a href="#riscos">Riscos</a>
+        <a href="#protecao">Proteção</a>
+        <a href="#quiz">Quiz</a>
+      </nav>
+    </div>
+  </footer>
+
+  <dialog class="objective-dialog" id="objetivo-dialog" aria-labelledby="titulo-objetivo" aria-describedby="descricao-objetivo">
+    <form method="dialog" class="dialog-close-form">
+      <button class="dialog-close" type="submit" aria-label="Fechar objetivo do site" autofocus>
+        <svg aria-hidden="true"><use href="#close"></use></svg>
+      </button>
+    </form>
+    <div class="dialog-icon"><svg aria-hidden="true"><use href="#shield"></use></svg></div>
+    <p class="eyebrow">Sobre o projeto</p>
+    <h2 id="titulo-objetivo">Objetivo do site</h2>
+    <p id="descricao-objetivo">O site ajuda você a reconhecer quais informações identificam uma pessoa, entender os direitos previstos na LGPD e adotar hábitos para proteger seus dados no dia a dia. Com exemplos práticos e um quiz, você pode aprender a identificar riscos e tomar decisões mais seguras na internet.</p>
+  </dialog>
+</body>
+</html>
